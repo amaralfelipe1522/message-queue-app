@@ -38,3 +38,11 @@ Para acessar o banco de dados dentro do container:
 ```sh
 psql usuarios
 ```
+
+### Estouro de memória
+
+Execute o seguinte comando para aumentar a quantidade de vm.max_map_count
+
+```sh
+sudo sysctl -w vm.max_map_count=262144
+```
